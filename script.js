@@ -13,3 +13,4 @@ const content = document.querySelector(".content");
 content.addEventListener("click", () => {
   sideBar.classList.remove("active");
 });
+
