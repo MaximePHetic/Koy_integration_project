@@ -1,3 +1,323 @@
+/* mettre un reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* $red: #FE5F55; */
+
 h1 {
     color: red;
 }
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: #FE5F55;
+}
+
+/* menu hamburger */
+#side-bar {
+    position: absolute;
+    width: 230px;
+    height: 100%;
+    background: #09fbba;
+    left: -300px;
+    transition: 0.5s ease-out;
+    z-index: 4;
+  }
+  .toggle-button {
+    position: absolute;
+    top: 30px;
+    left: 310px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+  }
+  .toggle-button span {
+    width: 60px;
+    height: 10px;
+    border-radius: 5px;
+    background: #09fbba;
+    display: block;
+    margin-top: 4px;
+    transition: 0.5s ease;
+  }
+  li {
+    color: #292929;
+    list-style-type: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding-left: 5px;
+  }
+  li:hover {
+    background: #292929;
+    color: #fcfcfb;
+  }
+  
+  #side-bar.active {
+    left: 0;
+  }
+  #side-bar.active .toggle-button {
+    top: 2.8rem;
+    left: 235px;
+  }
+  #side-bar.active span {
+    position: absolute;
+  }
+  #side-bar.active span:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  #side-bar.active span:nth-child(2) {
+    opacity: 0;
+  }
+  #side-bar.active span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  #side-bar.active ~ .content {
+    opacity: 0.3;
+  }
+
+
+
+.logo img {
+    height: 30px;
+}
+
+.btn-panier-item {
+    height: 20px;
+}
+
+/* card recette */
+
+.info-recette {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* margin-inline: auto; */
+    /* margin: auto; */
+    /* align-items: center; */
+    background-color: #F9EEE7;
+    border-radius: 10px;
+}
+
+.title-recette {
+    position: relative;
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-recette h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.title-recette .add-basket {
+    height: 30px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+meter::-webkit-meter-bar {
+    background: #E1E1E1;
+    border: none;
+    /* border: 1px solid #CCC; */
+}
+
+meter::-webkit-meter-optimum-value {
+    background: #FE5F55;
+}
+
+.jauge {
+    position: relative;
+    width: 80%;
+    background-color:aquamarine  
+}
+
+.jauge-item {
+    position: relative;
+    width: 100%;
+    background-color: aqua;
+}
+
+.jauge-number {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #09fbba;
+}
+
+.descriptif {
+    position: relative;
+    display: flex;
+}
+
+.icone {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icone-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.icone-item p {
+    position: relative;
+    margin-left: 10px;
+}
+
+
+.note {
+    position: relative;
+    display: flex;
+}
+
+.texte-poisson {
+    background: url(./assets/bulle\ dialogue.png) center / cover no-repeat;
+}
+
+.title-ingredient {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-ingredient h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.add-remove-ingredient {
+    position: relative;
+    display: flex;
+}
+
+.list-card {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ingredient-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70px;
+    background-color: goldenrod;
+    /* background-color: #FE5F55; */
+    background-color: #F9EEE7;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    margin: 10px;
+
+}
+
+/* .img-ingredient { */
+    /* background-color: #F9EEE7; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* width: 100%; */
+/* } */
+
+.quantité-ingredient {
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #FE5F55;
+    border-radius: 0 0 10px 10px;
+    color: white;
+}
+
+.recette-etape h3 {
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.etape {
+    position: relative;
+    display: flex;
+    margin: 20px;
+    /* justify-content: space-between; */
+}
+
+.number-step {
+    /* position: relative; */
+    position: absolute;
+    background-color: #FE5F55;
+    /* left: 0px; */
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 50%;
+    color: white;
+}
+
+.text-step {
+    position: relative;
+    left: 80px;
+}
+
+

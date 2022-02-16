@@ -10,6 +10,7 @@ git commit -m "message du commit"
 git status
 ... -->
 
+<!-- donner les url du site et du document -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,86 +23,104 @@ git status
 </head>
 <body>
 
-    <h1>rydyr</h1>
+    <!-- <h1>rydyr</h1> -->
     <header>
-        <div class="photo-profil"></div>
-        <div class="logo"></div>
-        <div class="btn-community"></div>
+        <div class="photo-profil">
+            <!-- <div id="side-bar">
+                <div class="toggle-button" id="toggle-button">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              
+                <ul>
+                  <li>Home</li>
+                  <li>About</li>
+                  <li>Services</li>
+                  <li>Contact</li>
+                </ul>
+              </div> -->
+            <p>hamburger</p>
+        </div>
+        <div class="logo">
+            <img src="./assets/logo-grand.png" alt="logo-koy">
+        </div>
+        <div class="btn-panier">
+            <img class="btn-panier-item" src="./assets/panier.png" alt="panier-btn">
+        </div>
     </header>
     
-    <section class="nav-top">
-        <div class="filter-search">
-            <input type="text">
-            <input type="button" value="filter">
-        </div>
-        <div>
-            <input type="button" value="back">
-            <p>toggle</p>
-        </div>
-    </section>
 
     <section class="info-recette">
-        <h2>Bo Bun</h2>
-        <div>image</div>
-        <div class="descriptif">
-            <div class="icone">
-                <div class="icone-item">
-                    <img src="" alt="">
-                    <p>20 min</p>
-                </div>
-                <div class="icone-item">
-                    <img src="" alt="">
-                    <p>Facile</p>
-                </div>
-                <div class="icone-item">
-                    <img src="" alt="">
-                    <p>852 Kcal</p>
-                </div>
-                <div class="icone-item">
-                    <img src="" alt="">
-                    <p>Elevé</p>
-                </div>
-            </div>
+        <div class="title-recette">
+            <img src="./assets/like.png" alt="like">
+            <h2><strong>Bo Bun</strong></h2>
+            <img class="add-basket" src="./assets/add basket.png" alt="add-basket">
+        </div>
 
+        <div class="card-content">
+            <img src="./assets/video recette.png" alt="video-recette">
 
             <div class="jauge">
                 <div class="jauge-item">
                     <p>Calorie</p>
-                    <span></span>
-                    <span></span>
-                    <p>480 / 1872 kcal</p>
+                    <p class="jauge-number"><meter min="0" max="1872" value="480"></meter>
+                        480 / 1872 kcal</p>
                 </div>
                 <div class="jauge-item">
-                    <p>Protéine</p>
-                    <span></span>
-                    <span></span>
-                    <p>480 / 1872 kcal</p>
+                    <p>Protéine
+                        <meter min="0" max="234" value="70"></meter>
+                        70 / 234 g 
+                    </p>
                 </div>
                 <div class="jauge-item">
-                    <p>Glucide</p>
-                    <span></span>
-                    <span></span>
-                    <p>480 / 1872 kcal</p>
+                    <p>Glucide
+                        <meter min="0" max="94" value="16"></meter>
+                        16 / 94 g
+                    </p>
                 </div>
                 <div class="jauge-item">
-                    <p>Lipide</p>
-                    <span></span>
-                    <span></span>
-                    <p>480 / 1872 kcal</p>
+                    <p>Lipide
+                        <meter min="0" max="63" value="18"></meter>
+                        18 / 63 g 
+                    </p>
                 </div>
                 <div class="jauge-item">
-                    <p>Fibre</p>
-                    <span></span>
-                    <span></span>
-                    <p>480 / 1872 kcal</p>
+                    <p>Fibre
+                        <meter min="0" max="25" value="5"></meter>
+                        5 / 25 g
+                    </p>
                 </div>
             </div>
 
+
+        <div class="descriptif">
+            <div class="icone">
+                <div class="icone-item">
+                    <img src="./assets/horloge.png" alt="horloge">
+                    <p>20 min</p>
+                </div>
+                <div class="icone-item">
+                    <img src="./assets/difficulty-gauge.png" alt="difficulty-gauge">
+                    <p>Facile</p>
+                </div>
+                <div class="icone-item">
+                    <img src="./assets/calories.png" alt="calorie-icone">
+                    <p>852 Kcal</p>
+                </div>
+                <div class="icone-item">
+                    <img src="./assets/cout.png" alt="cout-icone">
+                    <p>Elevé</p>
+                </div>
+            </div>
         </div>
+    </div>
     </section>
 
 
-    <footer>
+    <!-- du coup mettre un footer avec les réseaux sociaux, crédit, droits.... -->
+    <!-- <footer>
+
         <input type="button" value="Ajouter au panier">
         <input type="button" value="Panier">
 
@@ -111,12 +130,138 @@ git status
             <input type="button" value="map">
         </nav>
 
-    </footer>
+    </footer> -->
 
-    <div>
-        <div class="poisson"></div>
+    <div class="note">
+        <div class="poisson">
+            <img src="./assets/koti bubulle.png" alt="koti-img">
+        </div>
         <div class="texte-poisson">Le Bo bun est un plat d'origine vietnamienne. Il s’agit d’une salade complète, bien équilibrée et pleine de contraste de saveurs et de textures.</div>
     </div>
 
+
+    <section class="ingredients">
+        <div class="title-ingredient">
+            <h3>Ingrédients</h3>
+            <div class="add-remove-ingredient">
+                <input type="button" value="-">
+                <p>4 personnes</p>
+                <input type="button" value="+">
+            </div>
+        </div>
+
+        <div class="list-card">
+            <div class="ingredient-item">
+                <div class="img-ingredient">
+                    <img src="./assets/tomate.png" alt="tomate">
+                </div>
+                <div class="quantité-ingredient">2</div>
+            </div>
+            <div class="ingredient-item">
+                <div class="img-ingredient">
+                    <img src="./assets/salade.png" alt="salade">
+                </div>
+                <div class="quantité-ingredient">1</div>
+            </div>
+            <div class="ingredient-item">
+                <div class="img-ingredient">
+                    <img src="./assets/concombre.png" alt="concombre">
+                </div>
+                <div class="quantité-ingredient">1</div>
+            </div>
+            <div class="ingredient-item">
+                <div class="img-ingredient">
+                    <img src="./assets/carrot.png" alt="carotte">
+                </div>
+                <div class="quantité-ingredient">4</div>
+            </div>
+            <div class="ingredient-item">
+                <div class="img-ingredient">
+                    <img src="./assets/ail2.png" alt="ail">
+                </div>
+                <div class="quantité-ingredient">1</div>
+            </div>
+            <div class="ingredient-item">
+                <div class="img-ingredient">
+                    <img src="./assets/ciboulette 1.png" alt="ciboulette">
+                </div>
+                <div class="quantité-ingredient">5 g</div>
+            </div>
+            <div class="ingredient-item">
+                <div class="img-ingredient">
+                    <img src="./assets/pousse-de-soja.png" alt="pousse-de-soja">
+                </div>
+                <div class="quantité-ingredient">10 g</div>
+            </div>
+            <div class="ingredient-item">
+                <div class="img-ingredient">
+                    <img src="./assets/steak.png" alt="staek">
+                </div>
+                <div class="quantité-ingredient">100 g</div>
+            </div>
+            <div class="ingredient-item">
+                <div class="img-ingredient">
+                    <img src="./assets/menthe.png" alt="menthe">
+                </div>
+                <div class="quantité-ingredient">10 g</div>
+            </div>
+            <div class="ingredient-item">
+                <div class="img-ingredient">
+                    <img src="./assets/cacahuete-bio-coque-grillee-300g.png" alt="cacahuete">
+                </div>
+                <div class="quantité-ingredient">1</div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section class="recette-etape">
+        <h3>Recette</h3>
+
+        <div class="etape">
+            <div class="number-step">
+                <p>1</p>
+            </div>
+            <p class="text-step">Epluchez à moitié le concombre et coupez-le en julienne.</p>
+        </div>
+        <div class="etape">
+            <div class="number-step">
+                <p>2</p>
+            </div>
+            <p class="text-step">Coupez la viande de bœuf en fines lamelles.</p>
+        </div>
+        <div class="etape">
+            <div class="number-step">
+                <p>3</p>
+            </div>
+            <p class="text-step">Faites revenir la viande dans l'huile d'olive, avec la gousse d'ail hachée.</p>
+        </div>
+        <div class="etape">
+            <div class="number-step">
+                <p>4</p>
+            </div>
+            <p class="text-step">Préparez les vermicelles de riz en les laissant ramollir 5 min dans l'eau froide, égouttez-les puis faites-les cuire 3 min dans l'eau bouillante. Egouttez-les et réservez.</p>
+        </div>
+        <div class="etape">
+            <div class="number-step">
+                <p>5</p>
+            </div>
+            <p class="text-step">Préparez la sauce en mélangeant le nuoc mam, 2 cuillères à soupe d'eau, le sucre et le jus du citron. Réservez.</p>
+        </div>
+        <div class="etape">
+            <div class="number-step">
+                <p>6</p>
+            </div>
+            <p class="text-step">Répartissez la salade dans 4 grands bols. Ajoutez les vermicelle de riz, les carottes, les concombres, les pousses de soja et la viande. Assaisonnez avec la sauce, saupoudrez de cacahuètes concassées et d'herbes ciselées. Servez.</p>
+        </div>
+    </section>
+
+
+    <script src="./script.js" type="text/javascript" ></script>
 </body>
 </html>
+
+
+
