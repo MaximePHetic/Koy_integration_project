@@ -122,8 +122,8 @@ header {
 
 
 
-.logo img {
-    height: 30px;
+  .logo-img {
+    height: 25px;
 }
 
 .btn-panier-item {
@@ -136,18 +136,19 @@ header {
     position: relative;
     display: flex;
     flex-direction: column;
-    /* margin-inline: auto; */
-    /* margin: auto; */
-    /* align-items: center; */
+    width: 95%;
+    margin-block: 5%;
+    margin-inline: auto;
     background-color: #F9EEE7;
     border-radius: 10px;
 }
 
 .title-recette {
     position: relative;
+    margin: 10px;
     display: flex;
-    /* justify-content: space-around; */
-    justify-content: space-between;
+    justify-content: space-around;
+    /* justify-content: space-between; */
     align-items: center;
 }
 
@@ -156,7 +157,7 @@ header {
     font-weight: bold;
 }
 
-.title-recette .add-basket {
+.add-basket {
     height: 30px;
 }
 
@@ -165,6 +166,15 @@ header {
     flex-direction: column;
     align-items: center;
 }
+
+.video-content-jauge {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
 
 meter::-webkit-meter-bar {
     background: #E1E1E1;
@@ -178,14 +188,15 @@ meter::-webkit-meter-optimum-value {
 
 .jauge {
     position: relative;
-    width: 80%;
-    background-color:aquamarine  
+    width: 100%;
+    /* background-color:rgb(37, 122, 94)   */
 }
 
 .jauge-item {
     position: relative;
     width: 100%;
-    background-color: aqua;
+    margin-block: 5px;
+    /* background-color: aqua; */
 }
 
 .jauge-number {
@@ -193,7 +204,14 @@ meter::-webkit-meter-optimum-value {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    background-color: #09fbba;
+    justify-content: space-between;
+    /* background-color: #09fbba; */
+}
+
+.jauge-number meter {
+    width: 60%;
+    /* width: 70%; */
+    /* background-color: rgb(226, 63, 158); */
 }
 
 .descriptif {
@@ -224,16 +242,51 @@ meter::-webkit-meter-optimum-value {
 .note {
     position: relative;
     display: flex;
+    margin-inline: auto;
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 95%;
+    /* margin-top: 20px; */
+    margin-block: 10%;
 }
 
 .texte-poisson {
     background: url(./assets/bulle\ dialogue.png) center / cover no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* background: blue; */
+}
+
+.texte-poisson p {
+    /* background: url(./assets/bulle\ dialogue.png) center / cover no-repeat; */
+    /* background: red; */
+    position: relative;
+    margin-right: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 90%;
+}
+
+.ingredients {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    margin-block: 20px;
 }
 
 .title-ingredient {
     position: relative;
     display: flex;
     justify-content: space-between;
+    width: 80%;
+    margin: 10px;
+    /* background: #09fbba; */
 }
 
 .title-ingredient h3 {
@@ -244,10 +297,33 @@ meter::-webkit-meter-optimum-value {
 .add-remove-ingredient {
     position: relative;
     display: flex;
+    background: #F9EEE7;
+    border-radius: 50px;
+}
+
+.add-remove-ingredient input {
+    background: #F6AB80;
+    border: none;
+    padding-inline: 8px;
+}
+
+.add-remove-ingredient p {
+    margin: 5px;
+}
+
+.more-btn {
+    border-radius: 0 30px 30px 0;
+}
+
+.less-btn {
+    border-radius: 30px 0 0 30px;
 }
 
 .list-card {
     position: relative;
+    /* width: 100%; */
+    /* width: 80%; */
+    /* background-color: aqua; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -259,6 +335,7 @@ meter::-webkit-meter-optimum-value {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     width: 70px;
     background-color: goldenrod;
     /* background-color: #FE5F55; */
@@ -269,22 +346,33 @@ meter::-webkit-meter-optimum-value {
 
 }
 
-/* .img-ingredient { */
+.img-ingredient {
     /* background-color: #F9EEE7; */
-    /* display: flex; */
-    /* align-items: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* width: 100%; */
-/* } */
+}
 
 .quantité-ingredient {
     /* position: relative; */
     display: flex;
     justify-content: center;
+    /* justify-content: flex-end; */
     align-items: center;
     width: 100%;
     background-color: #FE5F55;
     border-radius: 0 0 10px 10px;
     color: white;
+}
+
+.quantité-ingredient p {
+    margin: 4px;
+}
+
+.recette-etape {
+    position: relative;
+    width: 100%;
 }
 
 .recette-etape h3 {
@@ -303,21 +391,231 @@ meter::-webkit-meter-optimum-value {
 
 .number-step {
     /* position: relative; */
-    position: absolute;
-    background-color: #FE5F55;
-    /* left: 0px; */
-    display: flex;
-    justify-content: center;
+    color: white;
+}
+
+.number-step p {
     width: 20px;
+    height: 20px;
     margin: 10px;
     padding: 5px;
     border-radius: 50%;
-    color: white;
+    background-color: #09fbba;
+}
+.number-step span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #FE5F55;
 }
 
 .text-step {
     position: relative;
-    left: 80px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    /* left: 80px; */
+}
+
+/* @media (min-width: 768px) {
+    .card-content {
+        position: relative;
+        background-color: blueviolet;
+        display: flex;
+    }
+
+} */
+
+@media (min-width: 768px) {
+
+    header {
+        height: 100px;
+    }
+
+    .logo-img {
+        height: 40px;
+    }
+
+    .btn-panier-item {
+        height: 40px;
+    }
+
+    .title-recette {
+        height: 50px;
+        justify-content: space-between;
+    }
+
+    .title-recette img,
+    .add-basket {
+        height: 45px;
+    }
+    .add-basket {
+        /* background-color: red; */
+        position: relative;
+        height: 100px;
+    }
+
+    .card-content {
+        position: relative;
+        /* background-color: blueviolet; */
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        /* margin: 50px; */
+        /* flex-wrap: wrap; */
+    }
+
+    .title-recette h2 {
+        font-size: 2.8rem;
+    }
+
+    .title-recette::before {
+        position: absolute;
+        font-weight: bold;
+        content: "J'aime";
+        font-size: 1.3rem;
+        margin-left: 70px;
+    }
+    .title-recette::after {
+        position: absolute;
+        font-weight: bold;
+        content: "J'ajoute à mon panier";
+        font-size: 1.3rem;
+        right: 0px;
+        margin-right: 70px;
+    }
+
+    /* .descriptif { */
+        /* display: flex; */
+        /* background-color: #FE5F55; */
+        /* flex-direction: row; */
+    /* } */
+
+    /* .details { */
+        /* background-color: greenyellow; */
+    /* } */
+
+    .jauge {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+    }
+
+    .video-content-jauge {
+        width: 85%;
+        /* width: 100%; */
+        /* background-color: red; */
+        flex-direction: row;
+        margin: 15px;
+        justify-content: space-between;
+        /* justify-content: space-around; */
+    }
+    .jauge-item {
+        position: relative;
+        /* align-items: center; */
+        margin-left: 50px;
+    }
+    .jauge-number {
+        width: 80%;
+    }
+
+    /* speak fish */
+
+    .koti {
+        height: 200px;
+    }
+
+    .texte-poisson {
+        font-size: 2.0rem;
+    }
+
+    .title-ingredient h3 {
+        font-size: 2.8rem;
+        margin-bottom: 40px;
+    }
+
+    .add-remove-ingredient {
+        width: 200px;
+        height: 50px;
+    }
+
+    .add-remove-ingredient p {
+        width: 200px;
+        font-size: 1.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .less-btn {
+        font-size: 1.4rem;
+        font-weight: bold;
+        width: 40px;
+    }
+
+    .more-btn {
+        font-size: 1.4rem;
+        font-weight: bold;
+        width: 40px;
+    }
+
+    .ingredient-item {
+        width: 150px;
+        height: 200px;
+        /* background-color: #09fbba; */
+    }
+
+    .img-ingredient {
+        width: 80px;
+        /* background-color: red; */
+    }
+
+    .quantité-ingredient {
+        height: 40px;
+        font-size: 1.4rem;
+    }
+
+    .picture-ingredient {
+        position: relative;
+        /* width: 800px; */
+        /* width: 100%; */
+        height: 100px;
+        /* background-color: rebeccapurple; */
+    }
+    
+    .recette-etape {
+        margin-block: 100px;
+    }
+    .recette-etape h3 {
+        font-size: 2.8rem;
+    }
+
+
+    .text-step,
+    .number-step {
+        font-size: 1.6rem;
+    }
+
+    /* .number-step { */
+        /* width: 50px; */
+        /* height: 50px; */
+    /* } */
+
 }
 
 
+@media (min-width: 1000px) {
+    .card-content p {
+        font-size: 1.2rem;
+    }
+    .recette-video {
+        position: relative;
+        width: 1000px;
+    }
+}
