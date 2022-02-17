@@ -55,11 +55,6 @@ body {
     font-family: "Noto Sans", sans-serif;
 }
 
-
-h1 {
-    color: red;
-}
-
 /* header */
 
 header {
@@ -176,8 +171,14 @@ header {
     height: 25px;
 }
 
-.btn-panier-item {
-    height: 20px;
+.btn-panier {
+    border: none;
+    background: none;
+}
+
+.btn-panier:hover {
+    background-color: #09fbba;
+    background: #fb09e7;
 }
 
 .panier-btn {
@@ -206,7 +207,7 @@ header {
     align-items: center;
 }
 
-.title-recette h2 {
+.title-recette h1 {
     font-size: 2rem;
     font-weight: bold;
 }
@@ -667,10 +668,6 @@ meter::-webkit-meter-optimum-value {
         height: 50px;
     }
 
-    /* .btn-panier-item {
-        height: 40px;
-    } */
-
     .panier-btn {
         height: 40px;
     }
@@ -704,7 +701,7 @@ meter::-webkit-meter-optimum-value {
         /* flex-wrap: wrap; */
     }
 
-    .title-recette h2 {
+    .title-recette h1 {
         font-size: 2.8rem;
     }
 
