@@ -180,6 +180,10 @@ header {
     height: 20px;
 }
 
+.panier-btn {
+    height: 20px;
+}
+
 /* card recette */
 
 .info-recette {
@@ -230,7 +234,11 @@ header {
     width: 100%;
 }
 
-.add-basket {
+/* .add-basket {
+    height: 30px;
+} */
+
+.add-to-basket {
     height: 30px;
 }
 
@@ -315,6 +323,7 @@ meter::-webkit-meter-optimum-value {
     margin-left: 10px;
 }
 
+/* section fish */
 
 .note {
     position: relative;
@@ -348,6 +357,54 @@ meter::-webkit-meter-optimum-value {
     padding: 15px;
     line-height: 22px;
 }
+.talkbubble p {
+    /* background: url(./assets/bulle\ dialogue.png) center / cover no-repeat; */
+    /* background: red; */
+    position: relative;
+    margin-right: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 90%;
+    padding: 15px;
+    line-height: 22px;
+}
+
+
+/* testestsetsetset */
+
+.talkbubble {
+    margin: auto;
+    margin-inline: 30px;
+    /* width: 120px; */
+    /* height: 80px; */
+    background: red;
+    background: #DCFFE3;
+    position: relative;
+    /* -moz-border-radius: 10px; */
+    /* -webkit-border-radius: 10px; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.talkbubble:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 58px;
+    width: 0;
+    height: 0;
+    /* border-top: 13px solid transparent; */
+    border-right: 26px solid #DCFFE3;
+    border-bottom: 13px solid transparent;
+}
+
+
+
+  /* section ingredients */
 
 .ingredients {
     width: 95%;
@@ -425,14 +482,18 @@ meter::-webkit-meter-optimum-value {
     flex-direction: column;
     /* align-items: center; */
     /* justify-content: space-between; */
-    width: 130px;
-    height: 130px;
-    background-color: goldenrod;
+    /* width: 130px; */
+    /* height: 130px; */
+    width: fit-content;
+    height: fit-content;
+    /* background-color: goldenrod; */
     /* background-color: #FE5F55; */
-    /* background-color: #F9EEE7; */
+    background-color: #F9EEE7;
     /* border: 1px solid black; */
     border-radius: 10px;
     margin: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
 }
 
 .img-ingredient {
@@ -445,54 +506,64 @@ meter::-webkit-meter-optimum-value {
     /* width: 100%; */
     /* width: 50%; */
     margin: auto;
-    width: 100px;
-    height: 100px;
+    margin: 50px;
+    /* width: 156px; */
+    /* height: 116px; */
+    /* width: fit-content; */
     /* height: fit-content; */
     /* background: url(./assets/tomate.webp) center / cover no-repeat; */
 }
 
 .tomate {
+    width: 141px;
+    height: 141px;
     background: url(./assets/tomate.webp) center / cover no-repeat;
 }
 .salade {
     /* height: min-content; */
-    /* background: url(./assets/salade.webp) center / cover no-repeat; */
-    background-color: aqua;
-}
-
-.salade-container {
-    position: relative;
-    /* height: 100%; */
-    height: 100px;
-    width: 120px;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    background-color: #cd59d1;
+    background: url(./assets/salade.webp) center / cover no-repeat;
+    width: 156px;
+    height: 134px;
 }
 
 .concombre {
+    width: 156px;
+    height: 116px;
     background: url(./assets/concombre.webp) center / cover no-repeat;
 }
 .carrot {
+    width: 156px;
+    height: 128px;
     background: url(./assets/carrot.webp) center / cover no-repeat;
 }
 .ail {
+    width: 156px;
+    height: 125px;
     background: url(./assets/ail.webp) center / cover no-repeat;
 }
 .ciboulette {
+    width: 156px;
+    height: 113px;
     background: url(./assets/ciboulette.webp) center / cover no-repeat;
 }
 .pousse-de-soja {
+    width: 156px;
+    height: 94px;
     background: url(./assets/pousse-de-soja.webp) center / cover no-repeat;
 }
 .steak {
+    width: 156px;
+    height: 94px;
     background: url(./assets/steak.webp) center / cover no-repeat;
 }
 .menthe {
+    width: 156px;
+    height: 109px;
     background: url(./assets/menthe.webp) center / cover no-repeat;
 }
 .cacahuete {
+    width: 156px;
+    height: 144px;
     background: url(./assets/cacahuete.webp) center / cover no-repeat;
 }
 
@@ -596,7 +667,11 @@ meter::-webkit-meter-optimum-value {
         height: 50px;
     }
 
-    .btn-panier-item {
+    /* .btn-panier-item {
+        height: 40px;
+    } */
+
+    .panier-btn {
         height: 40px;
     }
 
@@ -638,7 +713,16 @@ meter::-webkit-meter-optimum-value {
         align-items: center;
         justify-content: space-between;
         width: 200px;
+    }
 
+    .like {
+        width: 60px;
+        height: fit-content;
+        /* background-color: #cd59d1; */
+    }
+
+    .add-to-basket {
+        height: 60px;
     }
 
     .title-recette p {
@@ -715,13 +799,17 @@ meter::-webkit-meter-optimum-value {
         height: 200px;
     }
 
-    .texte-poisson {
+    .talkbubble {
         font-size: 2.0rem;
     }
 
-    .texte-poisson p {
+    .talkbubble p {
         padding: 15px;
         line-height: 40px;
+    }
+
+    .talkbubble:before {
+        top: 150px;
     }
 
     /* ingredient */
