@@ -48,11 +48,11 @@ table {
 
 @font-face {
     font-family: "Noto Sans";
-    src: url(./fonts/NotoSans-Regular.ttf);
+    src: url(./fonts/AnyConv.com__NotoSans-Regular.woff2) url(./fonts/NotoSans-Regular.woff),
 }
 
 body {
-    font-family: "Noto Sans";
+    font-family: "Noto Sans", sans-serif;
 }
 
 
@@ -129,6 +129,7 @@ header {
       /* position: relative; */
       position: relative;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       align-items: center;
       width: 100%;
@@ -142,8 +143,13 @@ header {
   #side-bar.active ul {
     position: relative;
     height: 150px;
-    top: 90px;
+    height: fit-content;
+    top: 50px;
     background-color: #F6AB80;
+  }
+
+  #side-bar li {
+      margin-block: 10px;
   }
   /* #side-bar.active .toggle-button {
     top: 2.8rem;
@@ -418,16 +424,15 @@ meter::-webkit-meter-optimum-value {
     display: flex;
     flex-direction: column;
     /* align-items: center; */
-    justify-content: space-between;
-    width: 100px;
-    height: 100px;
+    /* justify-content: space-between; */
+    width: 130px;
+    height: 130px;
     background-color: goldenrod;
     /* background-color: #FE5F55; */
-    background-color: #F9EEE7;
+    /* background-color: #F9EEE7; */
     /* border: 1px solid black; */
     border-radius: 10px;
     margin: 10px;
-
 }
 
 .img-ingredient {
@@ -436,7 +441,59 @@ meter::-webkit-meter-optimum-value {
     justify-content: center;
     /* align-items: center; */
     margin-block: auto;
+    background-color: green;
     /* width: 100%; */
+    /* width: 50%; */
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    /* height: fit-content; */
+    /* background: url(./assets/tomate.webp) center / cover no-repeat; */
+}
+
+.tomate {
+    background: url(./assets/tomate.webp) center / cover no-repeat;
+}
+.salade {
+    /* height: min-content; */
+    /* background: url(./assets/salade.webp) center / cover no-repeat; */
+    background-color: aqua;
+}
+
+.salade-container {
+    position: relative;
+    /* height: 100%; */
+    height: 100px;
+    width: 120px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-color: #cd59d1;
+}
+
+.concombre {
+    background: url(./assets/concombre.webp) center / cover no-repeat;
+}
+.carrot {
+    background: url(./assets/carrot.webp) center / cover no-repeat;
+}
+.ail {
+    background: url(./assets/ail.webp) center / cover no-repeat;
+}
+.ciboulette {
+    background: url(./assets/ciboulette.webp) center / cover no-repeat;
+}
+.pousse-de-soja {
+    background: url(./assets/pousse-de-soja.webp) center / cover no-repeat;
+}
+.steak {
+    background: url(./assets/steak.webp) center / cover no-repeat;
+}
+.menthe {
+    background: url(./assets/menthe.webp) center / cover no-repeat;
+}
+.cacahuete {
+    background: url(./assets/cacahuete.webp) center / cover no-repeat;
 }
 
 .quantité-ingredient {
@@ -455,6 +512,12 @@ meter::-webkit-meter-optimum-value {
     margin: 4px;
     padding: 3px;
 }
+
+/* .picture-ingredient { */
+    /* width: 50px; */
+    /* width: 50%; */
+    /* background-color: rebeccapurple; */
+/* } */
 
 .recette-etape {
     position: relative;
@@ -661,6 +724,8 @@ meter::-webkit-meter-optimum-value {
         line-height: 40px;
     }
 
+    /* ingredient */
+
     .title-ingredient h3 {
         font-size: 2.8rem;
         margin-bottom: 40px;
@@ -698,13 +763,9 @@ meter::-webkit-meter-optimum-value {
     }
 
     .img-ingredient {
-        /* position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center; */
-        /* margin-block: auto; */
         margin: auto;
-        width: 80px;
+        width: 100px;
+        height: 100px;
         /* background-color: red; */
     }
 
@@ -716,6 +777,7 @@ meter::-webkit-meter-optimum-value {
     .picture-ingredient {
         position: relative;
         /* width: 800px; */
+        
 
         /* width: 100%; */
         height: 100px;
