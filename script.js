@@ -7,9 +7,8 @@ function show() {
   sideBar.classList.toggle("active");
 }
 
-// REMOVE SIDEVAR IF CLICK ON THE MAIN CONTENT
+// REMOVE SIDEBAR IF CLICK ON THE MAIN CONTENT
 const content = document.querySelector(".content");
-
 content.addEventListener("click", () => {
   sideBar.classList.remove("active");
 });

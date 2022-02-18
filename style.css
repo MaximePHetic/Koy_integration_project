@@ -172,17 +172,32 @@ header {
 }
 
 .btn-panier {
-    border: none;
-    background: none;
+    /* border: #FE5F55; */
+    border: #111111 2px solid;
+    background: #FE5F55;
 }
 
 .btn-panier:hover {
+    color: #111111;
+    background-color: #2d6354;
+}
+
+.btn-panier p {
+    display: none;
+    font-weight: bold;
+    width: 100%;
+}
+
+/* .btn-panier:hover {
     background-color: #09fbba;
     background: #fb09e7;
-}
+} */
 
 .panier-btn {
     height: 20px;
+}
+.panier-btn:hover {
+    background-color: aliceblue;
 }
 
 /* card recette */
@@ -426,7 +441,7 @@ meter::-webkit-meter-optimum-value {
     /* background: #09fbba; */
 }
 
-.title-ingredient h3 {
+.title-ingredient h2 {
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -442,6 +457,7 @@ meter::-webkit-meter-optimum-value {
     background: #F6AB80;
     background-color: #FE5F55;
     color: white;
+    color: black;
     border: none;
     padding-inline: 8px;
 }
@@ -457,8 +473,10 @@ meter::-webkit-meter-optimum-value {
 
 .more-btn:hover,
 .less-btn:hover {
-    background-color: #09fbba;
+    /* background-color: #09fbba; */
+    /* background-color: black; */
     color: black;
+    color: white;
 }
 
 .less-btn {
@@ -578,6 +596,7 @@ meter::-webkit-meter-optimum-value {
     background-color: #FE5F55;
     border-radius: 0 0 10px 10px;
     color: white;
+    color: #000000;
 }
 
 .quantité-ingredient p {
@@ -596,7 +615,7 @@ meter::-webkit-meter-optimum-value {
     width: 100%;
 }
 
-.recette-etape h3 {
+.recette-etape h2 {
     display: flex;
     font-weight: bold;
     justify-content: center;
@@ -670,6 +689,23 @@ meter::-webkit-meter-optimum-value {
 
     .panier-btn {
         height: 40px;
+    }
+
+    .btn-panier {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-panier:hover {
+        background-color: #2d6354;
+    }
+
+    .btn-panier p {
+        display: flex;
+        color: white;
+        margin: 5px;
+        /* background-color: #fb09e7; */
     }
 
     .title-recette {
@@ -811,7 +847,7 @@ meter::-webkit-meter-optimum-value {
 
     /* ingredient */
 
-    .title-ingredient h3 {
+    .title-ingredient h2 {
         font-size: 2.8rem;
         margin-bottom: 40px;
     }
@@ -849,14 +885,15 @@ meter::-webkit-meter-optimum-value {
 
     .img-ingredient {
         margin: auto;
-        width: 100px;
-        height: 100px;
+        /* width: 100px; */
+        /* height: 100px; */
         /* background-color: red; */
     }
 
     .quantité-ingredient {
         height: 40px;
-        font-size: 1.4rem;
+        /* padding: 10px; */
+        font-size: 1.2rem;
     }
 
     .picture-ingredient {
@@ -872,7 +909,7 @@ meter::-webkit-meter-optimum-value {
     .recette-etape {
         margin-block: 100px;
     }
-    .recette-etape h3 {
+    .recette-etape h2 {
         font-size: 2.8rem;
         margin-bottom: 40px;
     }
