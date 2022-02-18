@@ -203,16 +203,19 @@ header {
     align-items: center;
     /* right: 0px; */
     color: white;
-    /* color: black; */
+    color: black;
     background: #FE5F55;
     padding: 10px;
     border-radius: 50px;
     background: #F6AB80;
+    background: #F9EEE7;
 }
 
 .btn-panier:hover {
     /* color: #111111; */
+    color: white;
     background-color: #000000;
+    filter: invert(10%);
 }
 
 .long-text {
@@ -242,6 +245,14 @@ header {
     /* background: #09fbba; */
     height: 20px;
 }
+
+.panier-btn {
+    filter: invert(100%)
+}
+
+/* .panier-btn:hover {
+    filter: invert(0%)
+} */
 
 /* card recette */
 
