@@ -172,9 +172,14 @@ header {
 }
 
 .btn-panier {
-    /* border: #FE5F55; */
-    border: #111111 2px solid;
+    border: #FE5F55;
+    /* border: #111111 2px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
     background: #FE5F55;
+    /* background: #a32b22; */
 }
 
 .btn-panier:hover {
@@ -182,11 +187,21 @@ header {
     background-color: #2d6354;
 }
 
-.btn-panier p {
+.long-text {
+    display: none;
+}
+
+.small-text {
+    display: flex;
+    font-weight: bold;
+}
+
+
+/* .btn-panier p {
     display: none;
     font-weight: bold;
     width: 100%;
-}
+} */
 
 /* .btn-panier:hover {
     background-color: #09fbba;
@@ -215,7 +230,7 @@ header {
 
 .title-recette {
     position: relative;
-    margin: 10px;
+    margin-block: 10px;
     display: flex;
     justify-content: space-around;
     /* justify-content: space-between; */
@@ -223,8 +238,9 @@ header {
 }
 
 .title-recette h1 {
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: bold;
+    padding: 2px;
 }
 
 .title-recette button {
@@ -240,21 +256,33 @@ header {
 .title-recette button:hover {
     background-color: #cd59d1;
     border-radius: 50px;
-    padding: 15px;
+    /* padding: 15px; */
+    padding: 5px;
 }
 
 .title-recette p {
     /* background-color: aqua; */
-    display: none;
+    /* display: none; */
+    font-size: .8rem;
     font-weight: bold;
-    width: 100%;
+    /* width: 100%; */
 }
 
 /* .add-basket {
     height: 30px;
 } */
 
+.like {
+    /* width: 60px; */
+    height: fit-content;
+    margin: 5px;
+    /* background-color: #cd59d1; */
+}
+
 .add-to-basket {
+    /* background-color: #2d6354; */
+    width: fit-content;
+    margin: 5px;
     height: 30px;
 }
 
@@ -268,14 +296,29 @@ header {
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
     /* background-color: antiquewhite; */
 }
 
-/* .recette-video { */
-    /* height: 250px; */
+.video-bobun {
+    width: fit-content;
+    margin: 15px;
+    /* background-color: #cd59d1; */
+    /* border: #000000 3px solid; */
+}
+
+.recette-video {
+    /* height: 100px; */
+    /* width: 200px; */
+    /* width: fit-content; */
+    /* width: 100%; */
+    /* width: 183.23px; */
     /* width: 1700px; */
-    /* background-color: aqua; */
-/* } */
+    background: url(./assets/video-small.png) center / cover no-repeat;
+    background-color: aqua;
+}
 
 meter::-webkit-meter-bar {
     background: #E1E1E1;
@@ -311,6 +354,7 @@ meter::-webkit-meter-optimum-value {
 
 .jauge-number meter {
     width: 60%;
+    margin-right: 10px;
     /* width: 70%; */
     /* background-color: rgb(226, 63, 158); */
 }
@@ -701,11 +745,21 @@ meter::-webkit-meter-optimum-value {
         background-color: #2d6354;
     }
 
-    .btn-panier p {
+    /* .btn-panier p {
         display: flex;
         color: white;
         margin: 5px;
-        /* background-color: #fb09e7; */
+        background-color: #fb09e7;
+    } */
+
+    .small-text {
+        display: none;
+        background-color: #F6AB80;
+    }
+
+    .long-text {
+        margin-right: 10px;
+        font-weight: bold;
     }
 
     .title-recette {
@@ -716,15 +770,11 @@ meter::-webkit-meter-optimum-value {
         /* background-color: rebeccapurple; */
     }
 
-    .title-recette img,
-    .add-basket {
-        height: 45px;
-    }
-    .add-basket {
-        /* background-color: red; */
+    /* .add-basket {
+        background-color: red;
         position: relative;
         height: 100px;
-    }
+    } */
 
     .card-content {
         position: relative;
@@ -749,17 +799,22 @@ meter::-webkit-meter-optimum-value {
     }
 
     .like {
-        width: 60px;
-        height: fit-content;
-        /* background-color: #cd59d1; */
+        /* height: 60px; */
+        width: 40px;
+        /* background-color: #000000; */
     }
 
     .add-to-basket {
         height: 60px;
     }
 
-    .title-recette p {
+    /* .title-recette p {
         display: flex;
+    } */
+    
+    .long-text {
+        display: flex;
+        /* background: #111111; */
     }
     
 
@@ -788,6 +843,11 @@ meter::-webkit-meter-optimum-value {
     /* .details { */
         /* background-color: greenyellow; */
     /* } */
+
+    .video-bobun {
+        height: 350px;
+        /* border: #d31414 3px solid; */
+    }
 
     .recette-video {
         position: relative;
@@ -930,6 +990,7 @@ meter::-webkit-meter-optimum-value {
         /* height: 50px; */
     /* } */
 
+    
 }
 
 
@@ -969,6 +1030,8 @@ meter::-webkit-meter-optimum-value {
     .add-remove-ingredient p {
         width: 280px;
     }
+
+    
 }
 
 
