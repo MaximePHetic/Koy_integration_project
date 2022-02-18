@@ -1,5 +1,3 @@
-/* mettre un reset */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -73,120 +71,105 @@ header {
 .header-content {
     position: relative;
     display: flex;
-    /* justify-content: space-between; */
     justify-content: flex-end;
     align-items: center;
     width: 95%;
-    /* width: 100%; */
-    /* width: 60%; */
 }
 
 /* menu hamburger */
 #side-bar {
     position: absolute;
-    /* width: 230px; */
     height: 10%;
     left: 0px;
-    /* width: 100%; */
-    /* background: #09fbba; */
     display: flex;
-    /* top: -300px; */
-    /* top: 300px; */
-    /* left: -300px; */
     transition: 0.5s ease-out;
     z-index: 4;
-    /* background-color: #F6AB80; */
-  }
-  .toggle-button {
-    position: absolute;
-    top: 20px;
-    left: 25px;
-    /* background-color: rebeccapurple; */
-    /* left: 330px; */
-    cursor: pointer;
-    height: 25px;
-    width: 25px;
-  }
+}
 
-  .toggle-button span {
-    width: 25px;
-    height: 4px;
-    border-radius: 5px;
-    background: #ffffff;
-    display: block;
-    margin-top: 4px;
-    transition: 0.5s ease;
-  }
-  li {
-    color: #292929;
-    list-style-type: none;
-    font-size: 1.8rem;
-    cursor: pointer;
-    margin-inline: 15px;
-    padding-left: 5px;
-  }
-  li:hover {
-    /* background: #292929; */
-    color: #fcfcfb;
-  }
+.toggle-button {
+position: absolute;
+top: 20px;
+left: 25px;
+cursor: pointer;
+height: 25px;
+width: 25px;
+}
 
-  #side-bar ul {
-      /* position: relative; */
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      /* flex-wrap: wrap; */
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      top: -300px;
-      /* background-color: #cd59d1; */
-      /* left: 0px; */
-  }
-  
-  #side-bar.active {
-    left: 0;
-  }
-  #side-bar.active ul {
+.toggle-button span {
+width: 25px;
+height: 4px;
+border-radius: 5px;
+background: #ffffff;
+display: block;
+margin-top: 4px;
+transition: 0.5s ease;
+}
+
+li {
+color: #292929;
+list-style-type: none;
+font-size: 1.8rem;
+cursor: pointer;
+margin-inline: 15px;
+padding-left: 5px;
+}
+
+li:hover {
+color: #fcfcfb;
+}
+
+#side-bar ul {
     position: relative;
-    height: 150px;
-    height: fit-content;
-    top: 55px;
-    background-color: #F6AB80;
-    /* background-color: #cd59d1; */
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: -300px;
+}
 
-  #side-bar li {
-      margin-block: 10px;
-  }
+#side-bar.active {
+left: 0;
+}
 
-  #side-bar.active span {
+#side-bar.active ul {
+position: relative;
+height: 150px;
+height: fit-content;
+top: 55px;
+background-color: #F6AB80;
+}
+
+#side-bar li {
+    margin-block: 10px;
+}
+
+#side-bar.active span {
+position: absolute;
+top: 10px;
+}
+
+#side-bar.active span:nth-child(1) {
+transform: rotate(45deg);
+}
+
+#side-bar.active span:nth-child(2) {
+opacity: 0;
+}
+
+#side-bar.active span:nth-child(3) {
+transform: rotate(-45deg);
+}
+
+#side-bar.active ~ .content {
+opacity: 0.3;
+}
+
+.logo {
     position: absolute;
-    top: 10px;
-  }
-  #side-bar.active span:nth-child(1) {
-    transform: rotate(45deg);
-  }
-  #side-bar.active span:nth-child(2) {
-    opacity: 0;
-  }
-  #side-bar.active span:nth-child(3) {
-    transform: rotate(-45deg);
-  }
-  #side-bar.active ~ .content {
-    opacity: 0.3;
-  }
-
-  .logo {
-      position: absolute;
-      /* position: relative; */
-      /* margin: auto; */
-      margin: auto;
-      left: calc(50% - 30.5px);
-      /* top: calc(50% - 17.203px); */
-      /* right: 50%; */
-      /* margin-inline: auto; */
-  }
+    margin: auto;
+    left: calc(50% - 30.5px);
+}
 
 .logo-img {
     height: 25px;
@@ -195,32 +178,21 @@ header {
 
 .btn-panier {
     position: relative;
-    /* position: absolute; */
-    /* border: #FE5F55; */
-    /* border: #111111 2px solid; */
-    /* cursor: pointer; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* right: 0px; */
-    color: white;
     color: black;
-    background: #FE5F55;
     padding: 10px;
     border-radius: 50px;
-    background: #F6AB80;
     background: #F9EEE7;
 }
 
 .btn-panier:hover {
-    /* color: #111111; */
     color: white;
     background-color: #000000;
-    filter: invert(10%);
 }
 
 .long-text {
-    /* color: black; */
     display: none;
 }
 
@@ -229,31 +201,13 @@ header {
     font-weight: bold;
 }
 
-
-/* .btn-panier p {
-    display: none;
-    font-weight: bold;
-    width: 100%;
-} */
-
-/* .btn-panier:hover {
-    background-color: #09fbba;
-    background: #fb09e7;
-} */
-
 .panier-btn {
-    /* color: black; */
-    /* background: #09fbba; */
     height: 20px;
 }
 
 .panier-btn {
     filter: invert(100%)
 }
-
-/* .panier-btn:hover {
-    filter: invert(0%)
-} */
 
 /* card recette */
 
@@ -273,7 +227,6 @@ header {
     margin-block: 10px;
     display: flex;
     justify-content: space-around;
-    /* justify-content: space-between; */
     align-items: center;
 }
 
@@ -307,10 +260,6 @@ header {
     font-weight: bold;
     /* width: 100%; */
 }
-
-/* .add-basket {
-    height: 30px;
-} */
 
 .like {
     /* width: 60px; */
@@ -347,17 +296,6 @@ header {
     margin: 15px;
     /* background-color: #cd59d1; */
     /* border: #000000 3px solid; */
-}
-
-.recette-video {
-    /* height: 100px; */
-    /* width: 200px; */
-    /* width: fit-content; */
-    /* width: 100%; */
-    /* width: 183.23px; */
-    /* width: 1700px; */
-    background: url(./assets/video-small.png) center / cover no-repeat;
-    background-color: aqua;
 }
 
 meter::-webkit-meter-bar {
@@ -525,8 +463,6 @@ meter::-webkit-meter-optimum-value {
     border-right: 26px solid #DCFFE3;
     border-bottom: 13px solid transparent;
 }
-
-
 
   /* section ingredients */
 
@@ -713,12 +649,6 @@ meter::-webkit-meter-optimum-value {
     padding: 3px;
 }
 
-/* .picture-ingredient { */
-    /* width: 50px; */
-    /* width: 50%; */
-    /* background-color: rebeccapurple; */
-/* } */
-
 .recette-etape {
     position: relative;
     width: 100%;
@@ -804,12 +734,13 @@ footer li {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 25px;
+    padding: 55px;
     height: 30px;
     width: 30px;
     color: white;
     color: #FE5F55;
-    border-radius: 50%;
+    border-radius: 50px;
+    /* position: relative; */
 }
 
 footer li:hover {
@@ -817,9 +748,24 @@ footer li:hover {
     /* color: #FE5F55; */
 }
 
-/* footer a p {
-    display: none;
-} */
+footer a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    /* background: #cd59d1; */
+}
+
+/* footer a p { */
+    /* position: absolute; */
+    /* top: 0%; */
+    /* bottom: 0%; */
+    /* bottom: Opx; */
+    /* top: 50%; */
+    /* display: block; */
+    /* opacity: 0; */
+/* } */
 
 .rights {
     position: relative;
@@ -940,33 +886,6 @@ footer li:hover {
         /* background: #111111; */
     }
     
-
-    /* .title-recette::before {
-        position: absolute;
-        font-weight: bold;
-        content: "J'aime";
-        font-size: 1.3rem;
-        margin-left: 70px;
-    }
-    .title-recette::after {
-        position: absolute;
-        font-weight: bold;
-        content: "J'ajoute à mon panier";
-        font-size: 1.3rem;
-        right: 0px;
-        margin-right: 100px;
-    } */
-
-    /* .descriptif { */
-        /* display: flex; */
-        /* background-color: #FE5F55; */
-        /* flex-direction: row; */
-    /* } */
-
-    /* .details { */
-        /* background-color: greenyellow; */
-    /* } */
-
     .recette-video {
         position: relative;
         height: 240px;
@@ -1014,10 +933,6 @@ footer li:hover {
         height: 200px;
     }
 
-    /* .talkbubble {
-        font-size: 2.0rem;
-    } */
-    
     .talkbubble p {
         font-size: 1.4rem;
         padding: 15px;
@@ -1025,10 +940,10 @@ footer li:hover {
     }
 
     .talkbubble:before {
-        top: 150px;
+        top: 80px;
     }
 
-    /* ingredient */
+    /* ingredients */
 
     .ingredients {
         margin-block: 70px;
@@ -1113,12 +1028,6 @@ footer li:hover {
     .number-step span {
         padding: 10px;
     }
-
-    /* .number-step { */
-        /* width: 50px; */
-        /* height: 50px; */
-    /* } */
-
     
 }
 

@@ -13,3 +13,11 @@ content.addEventListener("click", () => {
   sideBar.classList.remove("active");
 });
 
+const btnPanier = document.getElementsByClassName("btn-panier");
+
+btnPanier.addEventListener("click", changeColors);
+
+function changeColors() {
+  const hoverPanier = document.getElementsByClassName("panier-btn");
+  hoverPanier.classList.add("is-hovering-basket");
+}
