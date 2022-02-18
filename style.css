@@ -44,11 +44,10 @@ table {
 	border-spacing: 0;
 }
 
-/* $red: #FE5F55; */
-
 @font-face {
     font-family: "Noto Sans";
-    src: url(./fonts/AnyConv.com__NotoSans-Regular.woff2), url(./fonts/NotoSans-Regular.woff);
+    src: url(./fonts/free-fa-brands-400.woff2);
+    /* src: url(./fonts/AnyConv.com__NotoSans-Regular.woff2), url(./fonts/NotoSans-Regular.woff); */
     font-display: swap;
 }
 
@@ -866,6 +865,7 @@ footer a p {
 
     .logo-img {
         height: 50px;
+        width: 87.14px;
     }
 
     .panier-btn {
