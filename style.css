@@ -49,6 +49,7 @@ table {
 @font-face {
     font-family: "Noto Sans";
     src: url(./fonts/AnyConv.com__NotoSans-Regular.woff2), url(./fonts/NotoSans-Regular.woff);
+    font-display: swap;
 }
 
 body {
@@ -422,6 +423,10 @@ meter::-webkit-meter-optimum-value {
     margin-left: 10px;
 }
 
+.icone-item img {
+    height: 30px;
+}
+
 /* section fish */
 
 .knew-it {
@@ -433,6 +438,10 @@ meter::-webkit-meter-optimum-value {
     justify-content: center;
     font-weight: bold;
     font-size: 1.2rem;
+}
+
+.koti {
+    height: 100px;
 }
 
 .note {
@@ -802,6 +811,10 @@ footer li {
 footer li:hover {
     background-color: white;
     /* color: #FE5F55; */
+}
+
+footer a p {
+    display: none;
 }
 
 .rights {
