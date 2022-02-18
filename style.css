@@ -425,6 +425,7 @@ meter::-webkit-meter-optimum-value {
 
 .icone-item img {
     height: 30px;
+    width: 30px;
 }
 
 /* section fish */
@@ -441,7 +442,10 @@ meter::-webkit-meter-optimum-value {
 }
 
 .koti {
-    height: 100px;
+    width: 60px;
+    height: 86.8605px;
+    /* width="60" height="86.8605" */
+    /* height: 100px; */
 }
 
 .note {
