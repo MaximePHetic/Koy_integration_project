@@ -203,10 +203,11 @@ header {
     align-items: center;
     /* right: 0px; */
     color: white;
+    /* color: black; */
     background: #FE5F55;
     padding: 10px;
     border-radius: 50px;
-    /* background: #a32b22; */
+    background: #F6AB80;
 }
 
 .btn-panier:hover {
@@ -215,6 +216,7 @@ header {
 }
 
 .long-text {
+    /* color: black; */
     display: none;
 }
 
@@ -236,6 +238,8 @@ header {
 } */
 
 .panier-btn {
+    /* color: black; */
+    /* background: #09fbba; */
     height: 20px;
 }
 
