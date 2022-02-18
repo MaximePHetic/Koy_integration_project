@@ -55,6 +55,11 @@ body {
     font-family: "Noto Sans", sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: #FE5F55;
+}
+
 /* header */
 
 header {
@@ -66,11 +71,14 @@ header {
 }
 
 .header-content {
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: flex-end;
     align-items: center;
     width: 95%;
     /* width: 100%; */
+    /* width: 60%; */
 }
 
 /* menu hamburger */
@@ -78,7 +86,8 @@ header {
     position: absolute;
     /* width: 230px; */
     height: 10%;
-    width: 100%;
+    left: 0px;
+    /* width: 100%; */
     /* background: #09fbba; */
     display: flex;
     /* top: -300px; */
@@ -90,17 +99,18 @@ header {
   }
   .toggle-button {
     position: absolute;
-    top: 25px;
+    top: 20px;
     left: 25px;
     /* background-color: rebeccapurple; */
     /* left: 330px; */
     cursor: pointer;
-    height: 50px;
-    width: 50px;
+    height: 25px;
+    width: 25px;
   }
+
   .toggle-button span {
-    width: 60px;
-    height: 10px;
+    width: 25px;
+    height: 4px;
     border-radius: 5px;
     background: #ffffff;
     display: block;
@@ -110,13 +120,13 @@ header {
   li {
     color: #292929;
     list-style-type: none;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     cursor: pointer;
     margin-inline: 15px;
     padding-left: 5px;
   }
   li:hover {
-    background: #292929;
+    /* background: #292929; */
     color: #fcfcfb;
   }
 
@@ -124,11 +134,13 @@ header {
       /* position: relative; */
       position: relative;
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
+      /* flex-wrap: wrap; */
       justify-content: center;
       align-items: center;
       width: 100%;
       top: -300px;
+      /* background-color: #cd59d1; */
       /* left: 0px; */
   }
   
@@ -139,17 +151,15 @@ header {
     position: relative;
     height: 150px;
     height: fit-content;
-    top: 50px;
+    top: 55px;
     background-color: #F6AB80;
+    /* background-color: #cd59d1; */
   }
 
   #side-bar li {
       margin-block: 10px;
   }
-  /* #side-bar.active .toggle-button {
-    top: 2.8rem;
-    left: 235px;
-  } */
+
   #side-bar.active span {
     position: absolute;
     top: 10px;
@@ -167,24 +177,41 @@ header {
     opacity: 0.3;
   }
 
+  .logo {
+      position: absolute;
+      /* position: relative; */
+      /* margin: auto; */
+      margin: auto;
+      left: calc(50% - 30.5px);
+      /* top: calc(50% - 17.203px); */
+      /* right: 50%; */
+      /* margin-inline: auto; */
+  }
+
 .logo-img {
     height: 25px;
 }
 
 .btn-panier {
-    border: #FE5F55;
+    position: relative;
+    /* position: absolute; */
+    /* border: #FE5F55; */
     /* border: #111111 2px solid; */
+    /* cursor: pointer; */
     display: flex;
     justify-content: center;
     align-items: center;
+    /* right: 0px; */
     color: white;
     background: #FE5F55;
+    padding: 10px;
+    border-radius: 50px;
     /* background: #a32b22; */
 }
 
 .btn-panier:hover {
-    color: #111111;
-    background-color: #2d6354;
+    /* color: #111111; */
+    background-color: #000000;
 }
 
 .long-text {
@@ -210,9 +237,6 @@ header {
 
 .panier-btn {
     height: 20px;
-}
-.panier-btn:hover {
-    background-color: aliceblue;
 }
 
 /* card recette */
@@ -251,13 +275,13 @@ header {
     /* width: 600px; */
     background-color: #F9EEE7;
     /* background-color: #09fbba; */
+    /* padding: 5px; */
 }
 
 .title-recette button:hover {
-    background-color: #cd59d1;
+    background-color: #ffffff;
     border-radius: 50px;
     /* padding: 15px; */
-    padding: 5px;
 }
 
 .title-recette p {
@@ -505,6 +529,7 @@ meter::-webkit-meter-optimum-value {
 .add-remove-ingredient {
     position: relative;
     display: flex;
+    margin: 20px;
     background: #F9EEE7;
     border-radius: 50px;
 }
@@ -726,13 +751,59 @@ meter::-webkit-meter-optimum-value {
 }
 
 footer {
-    height: 30vh;
+    height: fit-content;
     background: #FE5F55;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    /* margin-inline: 50px; */
+    /* background-color: #09fbba; */
+}
+
+footer li {
+    background-color: #cd59d1;
+    background-color: #000000;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    height: 30px;
+    width: 30px;
+    color: white;
+    color: #FE5F55;
+    border-radius: 50%;
+}
+
+footer li:hover {
+    background-color: white;
+    /* color: #FE5F55; */
+}
+
+.rights {
+    position: relative;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    /* background-color: #09fbba;    */
 }
 
 @media (min-width: 525px) {
-
-
+    .video-bobun {
+        height: 350px;
+        /* border: #d31414 3px solid; */
+    }
 }
 
 @media (min-width: 768px) {
@@ -740,6 +811,25 @@ footer {
     header {
         height: 100px;
     }
+
+    .toggle-button {
+        top: 10px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .toggle-button span {
+        width: 60px;
+        height: 10px;
+      }
+
+      #side-bar.active li {
+        font-size: 2.5rem;
+      }
+
+      #side-bar.active ul {
+          top: 80px;
+      }
 
     .logo-img {
         height: 50px;
@@ -753,10 +843,6 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .btn-panier:hover {
-        background-color: #2d6354;
     }
 
     /* .btn-panier p {
@@ -783,12 +869,6 @@ footer {
         padding-inline: 30px;
         /* background-color: rebeccapurple; */
     }
-
-    /* .add-basket {
-        background-color: red;
-        position: relative;
-        height: 100px;
-    } */
 
     .card-content {
         position: relative;
@@ -821,10 +901,6 @@ footer {
     .add-to-basket {
         height: 60px;
     }
-
-    /* .title-recette p {
-        display: flex;
-    } */
     
     .long-text {
         display: flex;
@@ -857,11 +933,6 @@ footer {
     /* .details { */
         /* background-color: greenyellow; */
     /* } */
-
-    .video-bobun {
-        height: 350px;
-        /* border: #d31414 3px solid; */
-    }
 
     .recette-video {
         position: relative;
