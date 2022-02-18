@@ -48,7 +48,7 @@ table {
 
 @font-face {
     font-family: "Noto Sans";
-    src: url(./fonts/AnyConv.com__NotoSans-Regular.woff2) url(./fonts/NotoSans-Regular.woff),
+    src: url(./fonts/AnyConv.com__NotoSans-Regular.woff2), url(./fonts/NotoSans-Regular.woff);
 }
 
 body {
@@ -725,10 +725,13 @@ meter::-webkit-meter-optimum-value {
     line-height: 32px;
 }
 
-@media (min-width: 525px) {
-    .knew-it h2 {
+footer {
+    height: 30vh;
+    background: #FE5F55;
+}
 
-    }
+@media (min-width: 525px) {
+
 
 }
 
