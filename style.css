@@ -192,6 +192,12 @@ opacity: 0.3;
     background-color: #000000;
 }
 
+.is-hovering-basket {
+    background-color: #000000;
+    border-radius: 50px;
+    filter: invert(50%);
+}
+
 .long-text {
     display: none;
 }
@@ -203,10 +209,8 @@ opacity: 0.3;
 
 .panier-btn {
     height: 20px;
-}
-
-.panier-btn {
-    filter: invert(100%)
+    margin: 2px;
+    filter: invert(100%);
 }
 
 /* card recette */

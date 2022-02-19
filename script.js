@@ -13,11 +13,36 @@ content.addEventListener("click", () => {
   sideBar.classList.remove("active");
 });
 
-const btnPanier = document.getElementsByClassName("btn-panier");
+const btnPanier = document.getElementById("my-basket");
+const btnPanierIcon = document.getElementById("my-basket-icon");
 
-btnPanier.addEventListener("click", changeColors);
+btnPanier.addEventListener("mouseover", changeColors);
+btnPanier.addEventListener("mouseout", deleteColors);
 
 function changeColors() {
-  const hoverPanier = document.getElementsByClassName("panier-btn");
-  hoverPanier.classList.add("is-hovering-basket");
+  btnPanierIcon.classList.add("is-hovering-basket");
 }
+
+function deleteColors () {
+  btnPanierIcon.classList.remove("is-hovering-basket");
+}
+
+
+
+// const btnPanier = document.getElementsByClassName("btn-panier");
+// btnPanier.addEventListener("click", changeColors);
+
+// function changeColors() {
+//   const hoverPanier = document.getElementsByClassName("panier-btn");
+//   hoverPanier.classList.add("is-hovering-basket");
+// }
+
+// btnPanier.addEventListener("click", () => {
+//   const hoverPanier = document.getElementsByClassName("panier-btn");
+//   hoverPanier.classList.add("is-hovering-basket");
+// });
+
+// function changeColors() {
+//   const hoverPanier = document.getElementsByClassName("panier-btn");
+//   hoverPanier.classList.add("is-hovering-basket");
+// }
