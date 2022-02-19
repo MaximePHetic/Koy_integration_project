@@ -25,6 +25,6 @@ function changeColors() {
   btnPanierIcon.classList.add("is-hovering-basket");
 }
 
-function deleteColors () {
+function deleteColors() {
   btnPanierIcon.classList.remove("is-hovering-basket");
 }
