@@ -1,3 +1,4 @@
+// burger menu
 const toggleButton = document.getElementById("toggle-button");
 const sideBar = document.getElementById("side-bar");
 
@@ -7,12 +8,13 @@ function show() {
   sideBar.classList.toggle("active");
 }
 
-// REMOVE SIDEBAR IF CLICK ON THE MAIN CONTENT
+// remove sidebar if click on the main content
 const content = document.querySelector(".content");
 content.addEventListener("click", () => {
   sideBar.classList.remove("active");
 });
 
+// hovering basket button
 const btnPanier = document.getElementById("my-basket");
 const btnPanierIcon = document.getElementById("my-basket-icon");
 
@@ -26,23 +28,3 @@ function changeColors() {
 function deleteColors () {
   btnPanierIcon.classList.remove("is-hovering-basket");
 }
-
-
-
-// const btnPanier = document.getElementsByClassName("btn-panier");
-// btnPanier.addEventListener("click", changeColors);
-
-// function changeColors() {
-//   const hoverPanier = document.getElementsByClassName("panier-btn");
-//   hoverPanier.classList.add("is-hovering-basket");
-// }
-
-// btnPanier.addEventListener("click", () => {
-//   const hoverPanier = document.getElementsByClassName("panier-btn");
-//   hoverPanier.classList.add("is-hovering-basket");
-// });
-
-// function changeColors() {
-//   const hoverPanier = document.getElementsByClassName("panier-btn");
-//   hoverPanier.classList.add("is-hovering-basket");
-// }
