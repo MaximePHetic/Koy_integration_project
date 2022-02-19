@@ -44,8 +44,8 @@ table {
 
 @font-face {
     font-family: "Noto Sans";
-    src: url(./fonts/free-fa-brands-400.woff2);
-    /* src: url(./fonts/AnyConv.com__NotoSans-Regular.woff2), url(./fonts/NotoSans-Regular.woff); */
+    /* src: url(./fonts/free-fa-brands-400.woff2); */
+    src: url(./fonts/AnyConv.com__NotoSans-Regular.woff2), url(./fonts/NotoSans-Regular.woff);
     font-display: swap;
 }
 
